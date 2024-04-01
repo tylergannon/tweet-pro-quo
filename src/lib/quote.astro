@@ -1,0 +1,10 @@
+---
+import { type Quote } from "$lib/db";
+
+type Props = Quote;
+import ReactQuote from "./ReactQuote"
+import { prepareQuote } from "./prepare_quote";
+
+const props = prepareQuote(Astro.props);
+---
+<ReactQuote {...props} />

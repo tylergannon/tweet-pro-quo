@@ -1,0 +1,21 @@
+---
+import { get_quotes } from '$lib/db';
+
+export function getStaticPaths() {
+    const quotes = get_quotes();
+    return quotes.map(q => ({
+        params: {
+            id: q.id
+        },
+        props: {
+            ...q
+        }
+    }))
+}
+
+const {author, id, quote, year} = Astro.props;
+
+---
+
+<img src=`/${id}.webp` alt={quote} />
+
