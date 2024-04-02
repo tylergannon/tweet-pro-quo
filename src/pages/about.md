@@ -1,9 +1,9 @@
 ---
 layout: ../layouts/Layout.astro
 ---
-# Quote Pro Quo
+# Tweet Pro Quo
 
-QPQ is a simple bot that produces quote images and tweets them.
+TPQ is a simple bot that produces quote images and tweets them.
 
 ![Quotes Screenshot](../lib/images/quotes_screenshot.png)
 
