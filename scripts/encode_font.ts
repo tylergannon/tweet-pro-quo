@@ -10,7 +10,6 @@ if (!fs.existsSync(input_path)) {
     console.error(`Input file path "${input_path}" does not exist.`);
     process.exit(123);
 }
-console.log(input_path);
 
 const file = fs.readFileSync(
     input_path
